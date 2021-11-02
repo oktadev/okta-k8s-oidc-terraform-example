@@ -72,13 +72,13 @@ resource "okta_group_memberships" "restricted_user" {
 # Create an OIDC application
 
 resource "okta_app_oauth" "k8s_oidc" {
-  label = "k8s OIDC"
-  type  = "native"
+  label                      = "k8s OIDC"
+  type                       = "native" # this is important
+  token_endpoint_auth_method = "none"   # this sets the client authentication to PKCE
   grant_types = [
     "authorization_code"
   ]
-  response_types             = ["code"]
-  token_endpoint_auth_method = "none"
+  response_types = ["code"]
   redirect_uris = [
     "http://localhost:8000",
   ]
