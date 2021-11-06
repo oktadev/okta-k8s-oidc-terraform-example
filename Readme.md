@@ -76,3 +76,11 @@ You can run `terraform destroy` to revert the changes if required.
 > **TIP**: You can use the `terraform import <resource_name.id>` command to import data and configuration from your Okta instance. Refer [these docs](https://registry.terraform.io/providers/okta/okta/latest/docs) for more information.
 
 Please read [How to Secure Your Kubernetes Cluster with OpenID Connect and RBAC](http://developer.okta.com/blog/2021/11/08/k8s-api-server-oidc) to see how you can use this with Kubernetes.
+
+## Help
+
+Please post any questions as comments on the [blog post](http://developer.okta.com/blog/2021/11/08/k8s-api-server-oidc), or visit our [Okta Developer Forums](https://devforum.okta.com/).
+
+## License
+
+Apache 2.0, see [LICENSE](LICENSE).
